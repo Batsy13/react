@@ -9,11 +9,13 @@ export type BoxProps = {
 }
 
 export type MovieListProps = {
-  movies: Movie[]
+  movies: Movie[],
+  onSelectMovie: (arg0: string) => void;
 }
 
 export type MovieProps = {
   movie: Movie
+  onSelectMovie: (arg0: string) => void;
 }
 
 export type Movie = {

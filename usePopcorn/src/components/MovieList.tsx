@@ -1,11 +1,11 @@
 import type { MovieListProps } from "../types/movie"
 import { Movie } from "./Movie"
 
-export const MovieList = ({ movies }: MovieListProps) => {
+export const MovieList = ({ movies, onSelectMovie }: MovieListProps) => {
   return (
-    <ul className="list">
+    <ul className="list list-movies">
       {movies?.map((movie) => (
-        <Movie movie={movie} key={movie.imdbID} />
+        <Movie movie={movie} key={movie.imdbID} onSelectMovie={onSelectMovie}/>
       ))}
     </ul>
   )

@@ -12,12 +12,11 @@ type StarProps = {
 export const Star = ({ onClick, onHoverIn, onHoverOut, full, color, size }: StarProps) => {
 
   const starStyle = {
-    width: "48px",
-    height: "48px",
+    width: `${size}px`,
+    height: `${size}px`,
     display: "block",
     cursor: "pointer",
     color,
-    size: `${size / 1.5}px`
   }
 
   return (
